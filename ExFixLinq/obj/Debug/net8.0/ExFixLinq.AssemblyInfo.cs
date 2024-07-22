@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExFixLinq")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b650382c73d3655e7569bf45f5af63dff586741")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExFixLinq")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExFixLinq")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

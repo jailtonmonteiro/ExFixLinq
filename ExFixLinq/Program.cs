@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Linq.Expressions;
 using ExFixLinq.Entities;
 
 namespace ExFixLinq
@@ -12,28 +13,36 @@ namespace ExFixLinq
             double limit = 2000;
 
             List<Employee> list = new List<Employee>();
-
-            using (StreamReader sr = File.OpenText(path))
+            try
             {
-                while (!sr.EndOfStream)
+                using (StreamReader sr = File.OpenText(path))
                 {
-                    string[] data = sr.ReadLine().Split(',');
-                    string name = data[0];
-                    string email = data[1];
-                    double salary = double.Parse(data[2], CultureInfo.InvariantCulture);
-                    list.Add(new Employee(name, email, salary));
+                    while (!sr.EndOfStream)
+                    {
+                        string[] data = sr.ReadLine().Split(',');
+                        string name = data[0];
+                        string email = data[1];
+                        double salary = double.Parse(data[2], CultureInfo.InvariantCulture);
+                        list.Add(new Employee(name, email, salary));
+                    }
                 }
+
+                var people = list.Where(p => p.Salary > limit).OrderBy(p => p.Email).Select(p => p.Email);
+
+                var sum = list.Where(p => p.Name[0] == 'M').Sum(s => s.Salary);
+
+                foreach (string p in people)
+                {
+                    Console.WriteLine(p);
+                }
+
+                Console.WriteLine($"Soma de salários iniciados com M: {sum.ToString("F2", CultureInfo.InvariantCulture)}");
             }
-
-            var people = list.Where(p => p.Salary > limit).OrderBy(p => p.Email).Select(p => p.Email);
-            
-            var sum = list.Where(p => p.Name[0] == 'M').Sum(s => s.Salary);
-
-            foreach(string p in people){
-                Console.WriteLine(p);
+            catch (IOException ex)
+            {
+                Console.WriteLine("Existe algum erro com o arquivo, favo verificar!");
+                Console.WriteLine(ex.Message);
             }
-
-            Console.WriteLine($"Soma de salários iniciados com M: {sum.ToString("F2", CultureInfo.InvariantCulture)}");
         }
     }
 }
