@@ -1,0 +1,14 @@
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\bin\Debug\net8.0\ExFixLinq.exe
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\bin\Debug\net8.0\ExFixLinq.deps.json
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\bin\Debug\net8.0\ExFixLinq.runtimeconfig.json
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\bin\Debug\net8.0\ExFixLinq.dll
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\bin\Debug\net8.0\ExFixLinq.pdb
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.AssemblyInfoInputs.cache
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.AssemblyInfo.cs
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.csproj.CoreCompileInputs.cache
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.dll
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\refint\ExFixLinq.dll
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.pdb
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ExFixLinq.genruntimeconfig.cache
+E:\Cursos\CSharp\ExFixLinq\ExFixLinq\obj\Debug\net8.0\ref\ExFixLinq.dll
